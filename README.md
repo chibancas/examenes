@@ -1,2 +1,2 @@
 # LMSGI
-Proyectos en LMSGI
+Proyectos en LMSGI: HTML y Angular
