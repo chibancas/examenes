@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (mix-width:576px){
+    header {
+        height: 120px;
+        background-color: salmon;
+    }
+    main {
+        height: 500px;
+        background-color: seagreen;
+    }
+
+}
+
+@media (mix-width:993px){
+    header {
+        height: 200px;
+        background-color: blue;
+    }
+    main {
+        height: 700px;
+        background-color: yellow;
+    }
+
+}
