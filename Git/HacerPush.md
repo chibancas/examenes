@@ -24,7 +24,7 @@ La idea es
    Ejecutamos git branch para verificar ...
    ![brach](./img/branh.png)  
 
-4. **Modificamos el proyecto** y **actualizamos el repositorio remoto** 
+**Modificamos el proyecto** y **actualizamos el repositorio remoto** 
    1. Realizamos cambios en el código, pe:
       * creamos/modificamos la index
       * Modificamos los css para hacer el rwd ...
@@ -44,7 +44,7 @@ La idea es
         `$ git commit -m "mensaje descriptivo del nuevo estado (modificaciones realizadas)"`  
         ![commit](./img/commit.png)
         Si deseamos grabar los datos simplemente realizamos el commit con la misma etiqueta
-    3. Cuando sea preciso realizamos la actualización del **repositorio REMOTO**
+   3. Cuando sea preciso realizamos la actualización del **repositorio REMOTO**
       * `$ git push origin rama-morgado` 
         ![push](./img/push.png)
         > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir 
