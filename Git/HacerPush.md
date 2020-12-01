@@ -10,9 +10,10 @@ La idea es
 1. Creamos un usuario en Github.com, debemos de apuntar el username/email/password  
    Para hacer push en repositorio de clase hemos de facilitar nuetro **username** para que el profesor nos añada como colaboradores en el repositorio de clase
 2. Descargamos el repositorio de clase. Nos situamos en un directorio de trabajo LMSGI y ejecutamos el siguiente comando:  
-   `$ **git remote add** origin https://github.com/morgadodesarrollador/LMSGI.git`  
+   `$ git remote add origin https://github.com/morgadodesarrollador/LMSGI.git`  
    Este origen podría cambiar:  
    `$ git remote add originRepLMSGI https://github.com/morgadodesarrollador/LMSGI.git`  
    Hacemos la siguiente comprobación:  
    * `$ git remote` 
-   * `$ git remote -v`
+   * `$ git remote -v`  
+     ![remote](./img/remote.png)
