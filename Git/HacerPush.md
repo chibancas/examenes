@@ -21,7 +21,7 @@ La idea es
 3. Vamos a **crear una rama con tu nombre** con el objetivo de que subas tus prácticas o proyectos
    `$ git checkout -b rama-morgado`  
    Este comando provoca la creación de la rama y la selección/activación de esta  
-   Ejecutamos git branch para verificar ...
+   Ejecutamos git branch para verificar ...  
    ![brach](./img/branh.png)  
 
 **Modificamos el proyecto** y **actualizamos el repositorio remoto** 
