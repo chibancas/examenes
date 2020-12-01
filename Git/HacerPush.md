@@ -36,16 +36,16 @@ La idea es
         Nos aparecerán todas las modificaciones (ROJO) de los ficheros desde el último commit (snapshot)  
       * Añadir esos ficheros al nuevo **STAGE o ESCENARIO**  
         `$ git add -A .`
-      * Nos aparecerán todas las modificaciones en el nuevo ESCENARIO (VERDE)
-        `$ git status`
+      * Nos aparecerán todas las modificaciones en el nuevo ESCENARIO (VERDE)  
+        `$ git status`  
         ![statusOK](./img/statusOK.png)
       * Realizaremos el nuevo **SNAPSHOT** de nuestro proyecto
-        Si hemos realizado una nueva funcionalidad le damos una nueva etiqueta al commit
-        `$ git commit -m "mensaje descriptivo del nuevo estado (modificaciones realizadas)"`  
-        ![commit](./img/commit.png)
+        Si hemos realizado una nueva funcionalidad le damos una nueva etiqueta al commit  
+        `$ git commit -m "mensaje descriptivo del nuevo estado (modificaciones realizadas)"`    
+        ![commit](./img/commit.png)  
         Si deseamos grabar los datos simplemente realizamos el commit con la misma etiqueta
-   3. Cuando sea preciso realizamos la actualización del **repositorio REMOTO**
-      * `$ git push origin rama-morgado` 
-        ![push](./img/push.png)
-        > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir 
-        ![ramas](./img/ramas.png)
+   3. Cuando sea preciso realizamos la actualización del **repositorio REMOTO**  
+      * `$ git push origin rama-morgado`  
+        ![push](./img/push.png)  
+        > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
+        ![ramas](./img/ramas.png)  
