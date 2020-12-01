@@ -7,5 +7,5 @@ La idea es
 * Podemos ver la evolución con git log
 * Finalmente subiremos las modificaciones de los diferentes commits al repositorio de clase con git push
 ## Configuraciones iniciales
-* Creamos un usuario en Github.com, debemos de apuntar el username/email/password
-* Para hacer push en repositorio de clase hemos de facilitar nuetro **username** para que el profesor nos añada como colaboradores en el repositorio de clase
+1. Creamos un usuario en Github.com, debemos de apuntar el username/email/password
+   Para hacer push en repositorio de clase hemos de facilitar nuetro **username** para que el profesor nos añada como colaboradores en el repositorio de clase
