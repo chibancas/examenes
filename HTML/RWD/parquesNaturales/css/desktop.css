@@ -35,3 +35,16 @@ main picture {
 main picture:last-child {
     display: block;
 }
+
+main section#novedades article{
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main section#novedades article time{
+    order:1
+}
+main section#novedades article p{
+    order:0
+}
