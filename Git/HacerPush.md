@@ -10,7 +10,7 @@ La idea es
 1. ### Creamos un repositorio local
    Nos vamos a nuestro direcorio del proyecto y hacemos un  
    `$git init` Esto provoca la creación de un **repositorio local** en nuestra máquina para este directorio.
-   ![gitinit](./img/gitinit.png)
+   ![gitinit](./img/gitinit.png)  
    En este directorio oculto se almacenarán todos los metadatos, caches necesarias para que git pueda trabajar (stages o escenarios, snapshots, archivos de logs ...)  
    > Hemos de entender que una cosa es el trabajo con **git** (status/add/commit/logs ...) y otra cosa es publicar los proyectos en **GitHub**  
 2. ### Creamos un **usuario en Github.com**, 
