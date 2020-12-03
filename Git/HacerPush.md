@@ -18,7 +18,13 @@ La idea es
    * `$ git remote` 
    * `$ git remote -v`  
      ![remote](./img/remote.png)
-3. Vamos a **crear una rama con tu nombre** con el objetivo de que subas tus prácticas o proyectos
+3. Como nuestro repositorio local está vacío, vamos a crear la rama **master** en nuestro **repositorio local **. Hacemos:  
+    `$ git checkout -b master`  
+    verificamos que la rama ha sido creada y es activa : 
+     `$ git branch`  
+      ![remote](./img/branchmaster.png)
+
+4. Vamos a **crear una rama con tu nombre** con el objetivo de que subas tus prácticas o proyectos
    `$ git checkout -b rama-morgado`  
    Este comando provoca la creación de la rama y la selección/activación de esta  
    Ejecutamos git branch para verificar ...  
