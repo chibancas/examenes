@@ -60,7 +60,7 @@ La idea es
   * Cualquier cosa...
    ### Crear un nuevo SNAPSHOT(commit) en nuestro repositorio LOCAL
   * Después de un cierto tiempo prudencial o cuando hemos realizado una codificación importante debemos de  crear un nuevo **commit** en nuestro repositorio LOCAL  
-  * **verificar los archivos modificados (status)**
+  * **verificar los archivos modificados (status)**  
     `$ git status`  
     Nos aparecerán todas las modificaciones (ROJO) de los ficheros desde el último commit (snapshot)  
   * Añadir esos ficheros al nuevo **STAGE o ESCENARIO (add)**  
