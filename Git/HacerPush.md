@@ -38,7 +38,7 @@ La idea es
    * Nos descargamos la **rama master** del repositorio de GitHub indicado en **origin** a la **rama-master** de nuestro **repositorio local** en nuestro ordenador:  
     `$ git pull origin master`  
     Nuestra rama **master local** tendrá el contenido de la rama **master remota**  
-    En VSCODE aparacerá el nuevo contenido. VSCOde se integra con todas las funcionalidades de git. Abajo a la izquierda nos indica la **rama activa** que hay en el repositorio local. Debemos de tenerlo siempre presente a la hora de hacer **pull** (descargaas del repositorio remoto) y no destrozar así las ramas.
+    En VSCODE aparacerá el nuevo contenido. VSCOde se integra con todas las funcionalidades de git. Abajo a la izquierda nos indica la **rama activa** que hay en el repositorio local. Debemos de tenerlo siempre presente a la hora de hacer **pull** (descargaas del repositorio remoto) y no destrozar así las ramas.  
     ![vscodemaster](./img/vscodemaster.png)
 5. ### Crear una rama para nuestro desarrollo 
     La idea es crear una rama personal, distinta a la master, para realizar nuestros desarrollos, con el objetivo de que subas tus prácticas o proyectos  
