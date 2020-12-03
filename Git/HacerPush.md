@@ -7,27 +7,38 @@ La idea es
 * Podemos ver la evolución con git log
 * Finalmente subiremos las modificaciones de los diferentes commits al repositorio de clase con git push
 ## Configuraciones iniciales
-1. ### Creamos un **usuario en Github.com**, 
+1. ### Creamos un repositorio local
+   Nos vamos a nuestro direcorio del proyecto y hacemos un  
+   `$git init` Esto provoca la creación de un **repositorio local** en nuestra máquina para este directorio.
+   ![gitinit](./img/gitinit.png)
+   En este directorio oculto se almacenarán todos los metadatos, caches necesarias para que git pueda trabajar (stages o escenarios, snapshots, archivos de logs ...)  
+   > Hemos de entender que una cosa es el trabajo con **git** (status/add/commit/logs ...) y otra cosa es publicar los proyectos en **GitHub**  
+2. ### Creamos un **usuario en Github.com**, 
    Debemos de apuntar el username/email/password  
    Para hacer push en repositorio de clase hemos de facilitar nuetro **username** para que el profesor nos añada como colaboradores en el repositorio de clase  
     ![colaboradores](./img/colaboradores.png)
-2. **Descargamos el repositorio de clase**. No es lo mismo que CLONAR. Nos situamos en un directorio de trabajo LMSGI y ejecutamos el siguiente comando:  
+3. **Descargamos el repositorio de clase**. 
+   No es lo mismo que CLONAR. 
+   * Nos situamos en un directorio de trabajo LMSGI y agregamos un **origen remoto** con el siguiente comando:  
    `$ git remote add origin https://github.com/morgadodesarrollador/LMSGI.git`  
    Este origen podría cambiar:  
    `$ git remote add originRepLMSGI https://github.com/morgadodesarrollador/LMSGI.git`  
+   El  **origen remoto** puede ser de github, git azure, git Lab ...   
    Hacemos la siguiente comprobación:  
-   * `$ git remote` 
-   * `$ git remote -v`  
+     ```
+      $ git remote  
+      $ git remote -v
+     ``` 
      ![remote](./img/remote.png)
-   Como nuestro repositorio local está vacío, vamos a crear la rama **master** en nuestro **repositorio local**. Hacemos:  
+   * Como nuestro repositorio local está vacío, vamos a crear la rama **master** en nuestro **repositorio local**. Hacemos:  
     `$ git checkout -b master`  
     verificamos que la rama ha sido creada y es activa: 
      `$ git branch`  
       ![remote](./img/brachmaster.png)
 
-3. Nos descargamos la **rama master** del repositorio de GitHub indicado en **origin** a la **rama-master** de nuestro **repositorio local** en nuestro ordenador:  
+4. Nos descargamos la **rama master** del repositorio de GitHub indicado en **origin** a la **rama-master** de nuestro **repositorio local** en nuestro ordenador:  
     `$ git pull origin master`  
-4. Vamos a **crear una rama con tu nombre** con el objetivo de que subas tus prácticas o proyectos
+5. Vamos a **crear una rama con tu nombre** con el objetivo de que subas tus prácticas o proyectos
    `$ git checkout -b rama-morgado`  
    Este comando provoca la creación de la rama y la selección/activación de esta  
    Ejecutamos git branch para verificar ...  
