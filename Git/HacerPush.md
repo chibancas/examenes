@@ -42,19 +42,16 @@ La idea es
     ![vscodemaster](./img/vscodemaster.png)  
     Toda esta información se guarda en el directorio oculto **.git**, que está oculto para que pase desapercibido y no lo borreis ...  
   ### Crear una rama paralela para nuestro desarrollo  
-    La idea es crear una rama personal, distinta a la master, para realizar nuestros desarrollos, con el objetivo de que subas tus prácticas o proyectos  
-    La rama **master** se deja libre para mantener el **código en producción** sin errores.
-    En paralelo crearemos **ramas auxiliares** quen contienen modificaciones o nuevas funcionalidades que serán el **código en desarrollo**, de modo que estas modificaciones NO MODIFIQUEN el código en producción hasta que no estén aceptadas y se fusionen con la rama master.  
-  
-    `$ git checkout -b rama-morgado`  
-    Este comando provoca la creación de la rama y la selección/activación de esta rama    
-    Ejecutamos git branch para verificar ...  
-    ![brach](./img/branh.png)  
-    
-    > **Nota** es importante el orden de los pasos. Si hacemos (4) antes que (3), debemos de mezclar ambas ramas:  
+  La idea es crear una rama personal, distinta a la master, para realizar nuestros desarrollos, con el objetivo de que subas tus prácticas o proyectos  
+  La rama **master** se deja libre para mantener el **código en producción** sin errores.
+  En paralelo crearemos **ramas auxiliares** quen contienen modificaciones o nuevas funcionalidades que serán el **código en desarrollo**, de modo que estas modificaciones NO MODIFIQUEN el código en producción hasta que no estén aceptadas y se fusionen con la rama master.  
+  `$ git checkout -b rama-morgado`  
+  Este comando provoca la creación de la rama y la selección/activación de esta rama   
+  Ejecutamos git branch para verificar ...  
+  ![brach](./img/branh.png)  
+  > **Nota** es importante el orden de los pasos. Si hacemos (4) antes que (3), debemos de mezclar ambas ramas:  
     `$git merge rama-morgado master`  
     Pero esto lo dejaremos para otro documento ...
-
 ## Modificamos nuestro proyecto y actualizamos el repositorio remoto 
    ### Realizamos cambios en el código  
       * creamos/modificamos los ficheros ...
