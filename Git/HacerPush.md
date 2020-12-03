@@ -99,6 +99,6 @@ La idea es
   6. Podemos cambiar de rama solo si en la rama hemos realziado un commit, hasta que no hagamos el commit no podremos cambiar de rama.
 ## Descargar otras ramas del repositorio remoto** 
  1. En el repositorio local creamos la rama que deseo descargar, pe:el código de un compañero en su rama.  
-    `$git checkout -b rama-compañero`  
- 2. verificamos el cambio y Descargarmos el código
-    `$git pull origin rama-compañero`
+  `$git checkout -b rama-compañero`  
+ 2. verificamos el cambio y Descargarmos el código  
+  `$git pull origin rama-compañero`
