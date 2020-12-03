@@ -75,7 +75,7 @@ La idea es
     Si deseamos grabar los datos simplemente realizamos el commit con la misma etiqueta
    ### 3. Actualizar el repositorio remoto (push)
   Cuando sea preciso realizamos la actualización del **repositorio REMOTO**  
-  * `$ git push origin rama-morgado`  
+   `$ git push origin rama-morgado`  
     ![push](./img/push.png)  
     > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
     
