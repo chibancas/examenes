@@ -1,4 +1,4 @@
-# Hacer un push en el repositorio de Clase
+# Hacer un push en el repositorio remoto de Clase
 La idea es 
 * Debemos de configurar con git config el user.name, user.email y user.password
 * poder realizar un pull del repositorio
@@ -7,17 +7,17 @@ La idea es
 * Podemos ver la evolución con git log
 * Finalmente subiremos las modificaciones de los diferentes commits al repositorio de clase con git push
 ## Configuraciones iniciales
-1. ### Creamos un repositorio local
+  ### Creamos un repositorio local
    Nos vamos a nuestro direcorio del proyecto y hacemos un  
    `$git init` Esto provoca la creación de un **repositorio local** en nuestra máquina para este directorio.
    ![gitinit](./img/gitinit.png)  
    En este directorio oculto se almacenarán todos los metadatos, caches necesarias para que git pueda trabajar (stages o escenarios, snapshots, archivos de logs ...)  
    > Hemos de entender que una cosa es el trabajo con **git** (status/add/commit/logs ...) y otra cosa es publicar los proyectos en **GitHub**  
-2. ### Creamos un **usuario en Github.com**, 
+  ### Creamos un usuario en Github.com 
    Debemos de apuntar el username/email/password  
    Para hacer push en repositorio de clase hemos de facilitar nuetro **username** para que el profesor nos añada como colaboradores en el repositorio de clase  
     ![colaboradores](./img/colaboradores.png)
-3. **Descargamos el repositorio de clase**. 
+  ### Descargamos el repositorio remoto (pull)  
    No es lo mismo que CLONAR. 
    * Nos situamos en un directorio de trabajo LMSGI y agregamos un **origen remoto** con el siguiente comando:  
    `$ git remote add origin https://github.com/morgadodesarrollador/LMSGI.git`  
@@ -35,48 +35,56 @@ La idea es
     verificamos que la rama ha sido creada y es activa: 
      `$ git branch`  
       ![remote](./img/brachmaster.png)
-   * Nos descargamos la **rama master** del repositorio de GitHub indicado en **origin** a la **rama-master** de nuestro **repositorio local** en nuestro ordenador:  
+   * Nos descargamos la **rama master** (se entiende que es la rama por defecto) del repositorio remot de GitHub (**origin**) a la rama **master** de nuestro **repositorio local** en nuestro ordenador:  
     `$ git pull origin master`  
     Nuestra rama **master local** tendrá el contenido de la rama **master remota**  
     En VSCODE aparacerá el nuevo contenido. VSCOde se integra con todas las funcionalidades de git. Abajo a la izquierda nos indica la **rama activa** que hay en el repositorio local. Debemos de tenerlo siempre presente a la hora de hacer **pull** (descargaas del repositorio remoto) y no destrozar así las ramas.  
-    ![vscodemaster](./img/vscodemaster.png)
-5. ### Crear una rama para nuestro desarrollo 
+    ![vscodemaster](./img/vscodemaster.png)  
+    Toda esta información se guarda en el directorio oculto **.git**, que está oculto para que pase desapercibido y no lo borreis ...  
+  ### Crear una rama paralela para nuestro desarrollo  
     La idea es crear una rama personal, distinta a la master, para realizar nuestros desarrollos, con el objetivo de que subas tus prácticas o proyectos  
     La rama **master** se deja libre para mantener el **código en producción** sin errores.
-    En paralelo crearemos **ramas auxiliares** quen contienen modificaciones o nuevas funcionalidades, estaas será el **código en desarrollo**, de modo que estas modificaciones NO MODIFIQUEN el código en producción.  
-   
+    En paralelo crearemos **ramas auxiliares** quen contienen modificaciones o nuevas funcionalidades que serán el **código en desarrollo**, de modo que estas modificaciones NO MODIFIQUEN el código en producción hasta que no estén aceptadas y se fusionen con la rama master.  
+  
     `$ git checkout -b rama-morgado`  
-    Este comando provoca la creación de la rama y la selección/activación de esta  
+    Este comando provoca la creación de la rama y la selección/activación de esta rama    
     Ejecutamos git branch para verificar ...  
     ![brach](./img/branh.png)  
+    
+    > **Nota** es importante el orden de los pasos. Si hacemos (4) antes que (3), debemos de mezclar ambas ramas:  
+    `$git merge rama-morgado master`  
+    Pero esto lo dejaremos para otro documento ...
 
-**Modificamos el proyecto** y **actualizamos el repositorio remoto** 
-   1. Realizamos cambios en el código, pe:
-      * creamos/modificamos la index
+## Modificamos nuestro proyecto y actualizamos el repositorio remoto 
+   ### Realizamos cambios en el código  
+      * creamos/modificamos los ficheros ...
       * Modificamos los css para hacer el rwd ...
       * Creamos carpetas, añadimos/borramos imágenes, ficheros ...
-      * Cualquier cosa
-   2. Después de un cierto tiempo prudencial o cuando hemos realizado una codificación importante debemos de **crear un nuevo SNAPSHOT en nuestro repositorio LOCAL**
-      * **verificar los archivos modificados**
+      * Cualquier cosa...
+   ### Crear un nuevo SNAPSHOT(commit) en nuestro repositorio LOCAL
+      * Después de un cierto tiempo prudencial o cuando hemos realizado una codificación importante debemos de  crear un nuevo **commit** en nuestro repositorio LOCAL  
+      * **verificar los archivos modificados (status)**
         `$ git status`  
         Nos aparecerán todas las modificaciones (ROJO) de los ficheros desde el último commit (snapshot)  
-      * Añadir esos ficheros al nuevo **STAGE o ESCENARIO**  
+      * Añadir esos ficheros al nuevo **STAGE o ESCENARIO (add)**  
         `$ git add -A .`
       * Nos aparecerán todas las modificaciones en el nuevo ESCENARIO (VERDE)  
         `$ git status`  
         ![statusOK](./img/statusOK.png)
-      * Realizaremos el nuevo **SNAPSHOT** de nuestro proyecto
+      * Realizaremos el nuevo **commit** de nuestro proyecto
         Si hemos realizado una nueva funcionalidad le damos una nueva etiqueta al commit  
         `$ git commit -m "mensaje descriptivo del nuevo estado (modificaciones realizadas)"`    
         ![commit](./img/commit.png)  
         Si deseamos grabar los datos simplemente realizamos el commit con la misma etiqueta
-   3. Cuando sea preciso realizamos la actualización del **repositorio REMOTO**  
+   ### Actualizar el repositorio remoto (push)
+      Cuando sea preciso realizamos la actualización del **repositorio REMOTO**  
       * `$ git push origin rama-morgado`  
         ![push](./img/push.png)  
         > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
         
         ![ramas](./img/ramas.png)  
-**Descargar Actualizaciones del master** y **actualizamos el repositorio local** 
+## Descargar Actualizaciones del master 
+    Descargamos las actualizaciones del **master remoto** al **master local**  
     1. Vemos las ramas con `$ git branch` y con `$ git checkout master` cambiamos a la **rama master** del repositorio local.  
         ![branchMaster](./img/branchmaster.png)  
         ![vscodemaster](./img/vscodehmaster.png)  
@@ -91,7 +99,7 @@ La idea es
        Vemos como se produce el MILAGRO, se cambia a rama-morgado en VSCODE, y se ACTUALIZA NUESTRO CÓDIGO EN VSCODE.
     5. Podemos permutar y volver a master para ver las acutualizaciones ...
     6. Podemos cambiar de rama solo si en la rama hemos realziado un commit, hasta que no hagamos el commit no podremos cambiar de rama.
-**Descargar otras ramas del repositorio remoto** 
+## Descargar otras ramas del repositorio remoto** 
     1. En el repositorio local creamos la rama que deseo descargar, pe:el código de un compañero en su rama.  
        `$git checkout -b rama-compañero`  
     2. verificamos el cambio y Descargarmos el código
