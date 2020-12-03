@@ -79,7 +79,7 @@ La idea es
     ![push](./img/push.png)  
   > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
     
-    ![ramas](./img/ramas.png)  
+  ![ramas](./img/ramas.png)  
 ## Descargar Actualizaciones del master 
   Descargamos las actualizaciones del **master remoto** al **master local**  
   1. Vemos las ramas con `$ git branch` y con `$ git checkout master` cambiamos a la **rama master** del repositorio local.  
