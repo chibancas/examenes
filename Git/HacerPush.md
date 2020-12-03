@@ -74,17 +74,17 @@ La idea es
     ![commit](./img/commit.png)  
     Si deseamos grabar los datos simplemente realizamos el commit con la misma etiqueta
    ### 3. Actualizar el repositorio remoto (push)
-      Cuando sea preciso realizamos la actualización del **repositorio REMOTO**  
-      * `$ git push origin rama-morgado`  
-        ![push](./img/push.png)  
-        > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
-        
-        ![ramas](./img/ramas.png)  
+    Cuando sea preciso realizamos la actualización del **repositorio REMOTO**  
+    * `$ git push origin rama-morgado`  
+      ![push](./img/push.png)  
+      > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
+      
+      ![ramas](./img/ramas.png)  
 ## Descargar Actualizaciones del master 
   Descargamos las actualizaciones del **master remoto** al **master local**  
   1. Vemos las ramas con `$ git branch` y con `$ git checkout master` cambiamos a la **rama master** del repositorio local.  
-      ![branchMaster](./img/branchmaster.png)  
-      ![vscodemaster](./img/vscodehmaster.png)  
+      ![branchMaster](./img/brachmaster.png)  
+      ![vscodemaster](./img/vscodemaster.png)  
     Podemos comprobar que al cambiar de ramma, se da el DESASTRE, Y ocurren 2 cosas en VSCODE:  
     * Abajo a la derecha cambia a rama **master**.
     * Desaparece de VSCODE el código desarrollado por nosotros en nuestra rama **rama-morgado**
