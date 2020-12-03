@@ -61,4 +61,20 @@ La idea es
 **Descargar Actualizaciones del master** y **actualizamos el repositorio local** 
     1. Vemos las ramas con `$ git branch` y con `$ git checkout master` cambiamos a la **rama master** del repositorio local.  
         ![branchMaster](./img/branchmaster.png)  
-    2. Descargamos 
+        ![vscodemaster](./img/vscodehmaster.png)  
+      Podemos comprobar que al cambiar de ramma, se da el DESASTRE, Y ocurren 2 cosas en VSCODE:  
+      * Abajo a la derecha cambia a rama **master**.
+      * Desaparece de VSCODE el código desarrollado por nosotros en nuestra rama **rama-morgado**
+    2. Descargamos la rama **master** de origen a la **rama activa** de nuestro repositorio local, que es la master.  
+      `$git pull origin master`  
+      Esto produce la descarga  de las actualizaciones de la **rama master del repositorio remoto** en la **rama master del repositorio local**  
+    3. Vemos como en VSCODE aparece las actualizacioens desscargadas. 
+    4. Cambiamos de la rama master a la rama nuestra. `$git checkout rama-morgado` y verificamos.
+       Vemos como se produce el MILAGRO, se cambia a rama-morgado en VSCODE, y se ACTUALIZA NUESTRO CÓDIGO EN VSCODE.
+    5. Podemos permutar y volver a master para ver las acutualizaciones ...
+    6. Podemos cambiar de rama solo si en la rama hemos realziado un commit, hasta que no hagamos el commit no podremos cambiar de rama.
+**Descargar otras ramas del repositorio remoto** 
+    1. En el repositorio local creamos la rama que deseo descargar, pe:el código de un compañero en su rama.  
+       `$git checkout -b rama-compañero`  
+    2. verificamos el cambio y Descargarmos el código
+       `$git pull origin rama-compañero`
