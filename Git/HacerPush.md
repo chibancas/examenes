@@ -77,7 +77,7 @@ La idea es
   Cuando sea preciso realizamos la actualización del **repositorio REMOTO**  
    `$ git push origin rama-morgado`  
     ![push](./img/push.png)  
-    > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
+  > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
     
     ![ramas](./img/ramas.png)  
 ## Descargar Actualizaciones del master 
