@@ -1,8 +1,7 @@
 **Índice**
-1. [Hacer un push en el repositorio remoto de Clase]
+1. [Hacer un push en el repositorio remoto de Clase] (#id1)
 
-
-# Hacer un push en el repositorio remoto de Clase
+# Hacer un push en el repositorio remoto de Clase <a name="id1"></a>
 La idea es 
 * Debemos de configurar con git config el user.name, user.email y user.password
 * poder realizar un pull del repositorio
