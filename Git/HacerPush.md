@@ -24,7 +24,9 @@ La idea es
      `$ git branch`  
       ![remote](./img/branchmaster.png)
 
-4. Vamos a **crear una rama con tu nombre** con el objetivo de que subas tus prácticas o proyectos
+4. Nos descargamos la **rama master** del repositorio de GitHub indicado en **origin** a la **rama-master** de nuestro **repositorio local** en nuestro ordenador:  
+    `$ git pull origin master`  
+5. Vamos a **crear una rama con tu nombre** con el objetivo de que subas tus prácticas o proyectos
    `$ git checkout -b rama-morgado`  
    Este comando provoca la creación de la rama y la selección/activación de esta  
    Ejecutamos git branch para verificar ...  
@@ -56,3 +58,7 @@ La idea es
         > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
         
         ![ramas](./img/ramas.png)  
+**Descargar Actualizaciones del master** y **actualizamos el repositorio local** 
+    1. Vemos las ramas con `$ git branch` y con `$ git checkout master` cambiamos a la **rama master** del repositorio local.  
+        ![branchMaster](./img/branchmaster.png)  
+    2. Descargamos 
