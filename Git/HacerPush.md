@@ -53,12 +53,12 @@ La idea es
     `$git merge rama-morgado master`  
     Pero esto lo dejaremos para otro documento ...
 ## Modificamos nuestro proyecto y actualizamos el repositorio remoto 
-   ### Realizamos cambios en el código  
+   ### 1. Realizamos cambios en el código  
   * Creamos/modificamos/borramos ficheros ...
   * Modificamos los css para hacer el rwd ...
   * Creamos/borramos carpetas, añadimos/borramos imágenes, ficheros ...
   * Cualquier cosa...
-   ### Crear un nuevo SNAPSHOT(commit) en nuestro repositorio LOCAL
+   ### 2. Crear un nuevo SNAPSHOT(commit) en nuestro repositorio LOCAL
   * Después de un cierto tiempo prudencial o cuando hemos realizado una codificación importante debemos de  crear un nuevo **commit** en nuestro repositorio LOCAL  
   * **verificar los archivos modificados (status)**  
     `$ git status`  
@@ -73,7 +73,7 @@ La idea es
     `$ git commit -m "mensaje descriptivo del nuevo estado (modificaciones realizadas)"`    
     ![commit](./img/commit.png)  
     Si deseamos grabar los datos simplemente realizamos el commit con la misma etiqueta
-   ### Actualizar el repositorio remoto (push)
+   ### 3. Actualizar el repositorio remoto (push)
       Cuando sea preciso realizamos la actualización del **repositorio REMOTO**  
       * `$ git push origin rama-morgado`  
         ![push](./img/push.png)  
@@ -81,21 +81,21 @@ La idea es
         
         ![ramas](./img/ramas.png)  
 ## Descargar Actualizaciones del master 
-    Descargamos las actualizaciones del **master remoto** al **master local**  
-    1. Vemos las ramas con `$ git branch` y con `$ git checkout master` cambiamos a la **rama master** del repositorio local.  
-        ![branchMaster](./img/branchmaster.png)  
-        ![vscodemaster](./img/vscodehmaster.png)  
-      Podemos comprobar que al cambiar de ramma, se da el DESASTRE, Y ocurren 2 cosas en VSCODE:  
-      * Abajo a la derecha cambia a rama **master**.
-      * Desaparece de VSCODE el código desarrollado por nosotros en nuestra rama **rama-morgado**
-    2. Descargamos la rama **master** de origen a la **rama activa** de nuestro repositorio local, que es la master.  
-      `$git pull origin master`  
-      Esto produce la descarga  de las actualizaciones de la **rama master del repositorio remoto** en la **rama master del repositorio local**  
-    3. Vemos como en VSCODE aparece las actualizacioens desscargadas. 
-    4. Cambiamos de la rama master a la rama nuestra. `$git checkout rama-morgado` y verificamos.
-       Vemos como se produce el MILAGRO, se cambia a rama-morgado en VSCODE, y se ACTUALIZA NUESTRO CÓDIGO EN VSCODE.
-    5. Podemos permutar y volver a master para ver las acutualizaciones ...
-    6. Podemos cambiar de rama solo si en la rama hemos realziado un commit, hasta que no hagamos el commit no podremos cambiar de rama.
+  Descargamos las actualizaciones del **master remoto** al **master local**  
+  1. Vemos las ramas con `$ git branch` y con `$ git checkout master` cambiamos a la **rama master** del repositorio local.  
+      ![branchMaster](./img/branchmaster.png)  
+      ![vscodemaster](./img/vscodehmaster.png)  
+    Podemos comprobar que al cambiar de ramma, se da el DESASTRE, Y ocurren 2 cosas en VSCODE:  
+    * Abajo a la derecha cambia a rama **master**.
+    * Desaparece de VSCODE el código desarrollado por nosotros en nuestra rama **rama-morgado**
+  2. Descargamos la rama **master** de origen a la **rama activa** de nuestro repositorio local, que es la master.  
+    `$git pull origin master`  
+    Esto produce la descarga  de las actualizaciones de la **rama master del repositorio remoto** en la **rama master del repositorio local**  
+  3. Vemos como en VSCODE aparece las actualizacioens desscargadas. 
+  4. Cambiamos de la rama master a la rama nuestra. `$git checkout rama-morgado` y verificamos.
+      Vemos como se produce el MILAGRO, se cambia a rama-morgado en VSCODE, y se ACTUALIZA NUESTRO CÓDIGO EN VSCODE.
+  5. Podemos permutar y volver a master para ver las acutualizaciones ...
+  6. Podemos cambiar de rama solo si en la rama hemos realziado un commit, hasta que no hagamos el commit no podremos cambiar de rama.
 ## Descargar otras ramas del repositorio remoto** 
     1. En el repositorio local creamos la rama que deseo descargar, pe:el código de un compañero en su rama.  
        `$git checkout -b rama-compañero`  
