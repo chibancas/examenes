@@ -54,25 +54,25 @@ La idea es
     Pero esto lo dejaremos para otro documento ...
 ## Modificamos nuestro proyecto y actualizamos el repositorio remoto 
    ### Realizamos cambios en el código  
-  * creamos/modificamos los ficheros ...
+  * Creamos/modificamos/borramos ficheros ...
   * Modificamos los css para hacer el rwd ...
-  * Creamos carpetas, añadimos/borramos imágenes, ficheros ...
+  * Creamos/borramos carpetas, añadimos/borramos imágenes, ficheros ...
   * Cualquier cosa...
    ### Crear un nuevo SNAPSHOT(commit) en nuestro repositorio LOCAL
-      * Después de un cierto tiempo prudencial o cuando hemos realizado una codificación importante debemos de  crear un nuevo **commit** en nuestro repositorio LOCAL  
-      * **verificar los archivos modificados (status)**
-        `$ git status`  
-        Nos aparecerán todas las modificaciones (ROJO) de los ficheros desde el último commit (snapshot)  
-      * Añadir esos ficheros al nuevo **STAGE o ESCENARIO (add)**  
-        `$ git add -A .`
-      * Nos aparecerán todas las modificaciones en el nuevo ESCENARIO (VERDE)  
-        `$ git status`  
-        ![statusOK](./img/statusOK.png)
-      * Realizaremos el nuevo **commit** de nuestro proyecto
-        Si hemos realizado una nueva funcionalidad le damos una nueva etiqueta al commit  
-        `$ git commit -m "mensaje descriptivo del nuevo estado (modificaciones realizadas)"`    
-        ![commit](./img/commit.png)  
-        Si deseamos grabar los datos simplemente realizamos el commit con la misma etiqueta
+  * Después de un cierto tiempo prudencial o cuando hemos realizado una codificación importante debemos de  crear un nuevo **commit** en nuestro repositorio LOCAL  
+  * **verificar los archivos modificados (status)**
+    `$ git status`  
+    Nos aparecerán todas las modificaciones (ROJO) de los ficheros desde el último commit (snapshot)  
+  * Añadir esos ficheros al nuevo **STAGE o ESCENARIO (add)**  
+    `$ git add -A .`
+  * Nos aparecerán todas las modificaciones en el nuevo ESCENARIO (VERDE)  
+    `$ git status`  
+    ![statusOK](./img/statusOK.png)
+  * Realizaremos el nuevo **commit** de nuestro proyecto
+    Si hemos realizado una nueva funcionalidad le damos una nueva etiqueta al commit  
+    `$ git commit -m "mensaje descriptivo del nuevo estado (modificaciones realizadas)"`    
+    ![commit](./img/commit.png)  
+    Si deseamos grabar los datos simplemente realizamos el commit con la misma etiqueta
    ### Actualizar el repositorio remoto (push)
       Cuando sea preciso realizamos la actualización del **repositorio REMOTO**  
       * `$ git push origin rama-morgado`  
