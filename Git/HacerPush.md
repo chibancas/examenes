@@ -7,17 +7,17 @@ La idea es
 * Podemos ver la evolución con git log
 * Finalmente subiremos las modificaciones de los diferentes commits al repositorio de clase con git push
 ## Configuraciones iniciales
-  ### Creamos un repositorio local
+  ### 1. Creamos un repositorio local
    Nos vamos a nuestro direcorio del proyecto y hacemos un  
    `$git init` Esto provoca la creación de un **repositorio local** en nuestra máquina para este directorio.
    ![gitinit](./img/gitinit.png)  
    En este directorio oculto se almacenarán todos los metadatos, caches necesarias para que git pueda trabajar (stages o escenarios, snapshots, archivos de logs ...)  
    > Hemos de entender que una cosa es el trabajo con **git** (status/add/commit/logs ...) y otra cosa es publicar los proyectos en **GitHub**  
-  ### Creamos un usuario en Github.com 
+  ### 2. Creamos un usuario en Github.com 
    Debemos de apuntar el username/email/password  
    Para hacer push en repositorio de clase hemos de facilitar nuetro **username** para que el profesor nos añada como colaboradores en el repositorio de clase  
     ![colaboradores](./img/colaboradores.png)
-  ### Descargamos el repositorio remoto (pull)  
+  ### 3. Descargamos el repositorio remoto (pull)  
    No es lo mismo que CLONAR. 
    * Nos situamos en un directorio de trabajo LMSGI y agregamos un **origen remoto** con el siguiente comando:  
    `$ git remote add origin https://github.com/morgadodesarrollador/LMSGI.git`  
@@ -41,12 +41,12 @@ La idea es
     En VSCODE aparacerá el nuevo contenido. VSCOde se integra con todas las funcionalidades de git. Abajo a la izquierda nos indica la **rama activa** que hay en el repositorio local. Debemos de tenerlo siempre presente a la hora de hacer **pull** (descargaas del repositorio remoto) y no destrozar así las ramas.  
     ![vscodemaster](./img/vscodemaster.png)  
     Toda esta información se guarda en el directorio oculto **.git**, que está oculto para que pase desapercibido y no lo borreis ...  
-  ### Crear una rama paralela para nuestro desarrollo  
-  La idea es crear una rama personal, distinta a la master, para realizar nuestros desarrollos, con el objetivo de que subas tus prácticas o proyectos  
+  ### 4. Crear una rama paralela para nuestro desarrollo  
+  La idea es crear una rama personal distinta a la master, para realizar nuestros desarrollos, con el objetivo de que subas tus prácticas o proyectos  
   La rama **master** se deja libre para mantener el **código en producción** sin errores.
   En paralelo crearemos **ramas auxiliares** quen contienen modificaciones o nuevas funcionalidades que serán el **código en desarrollo**, de modo que estas modificaciones NO MODIFIQUEN el código en producción hasta que no estén aceptadas y se fusionen con la rama master.  
   `$ git checkout -b rama-morgado`  
-  Este comando provoca la creación de la rama y la selección/activación de esta rama   
+  Este comando provoca la creación de la rama y la selección/activación de la misma   
   Ejecutamos git branch para verificar ...  
   ![brach](./img/branh.png)  
   > **Nota** es importante el orden de los pasos. Si hacemos (4) antes que (3), debemos de mezclar ambas ramas:  
