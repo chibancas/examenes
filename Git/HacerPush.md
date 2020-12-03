@@ -35,14 +35,17 @@ La idea es
     verificamos que la rama ha sido creada y es activa: 
      `$ git branch`  
       ![remote](./img/brachmaster.png)
-
-4. Nos descargamos la **rama master** del repositorio de GitHub indicado en **origin** a la **rama-master** de nuestro **repositorio local** en nuestro ordenador:  
+   * Nos descargamos la **rama master** del repositorio de GitHub indicado en **origin** a la **rama-master** de nuestro **repositorio local** en nuestro ordenador:  
     `$ git pull origin master`  
-5. Vamos a **crear una rama con tu nombre** con el objetivo de que subas tus prácticas o proyectos
-   `$ git checkout -b rama-morgado`  
-   Este comando provoca la creación de la rama y la selección/activación de esta  
-   Ejecutamos git branch para verificar ...  
-   ![brach](./img/branh.png)  
+5. ### Crear una rama para nuestro desarrollo 
+    La idea es crear una rama personal, distinta a la master, para realizar nuestros desarrollos, con el objetivo de que subas tus prácticas o proyectos  
+    La rama **master** se deja libre para mantener el **código en producción** sin errores.
+    En paralelo crearemos **ramas auxiliares** quen contienen modificaciones o nuevas funcionalidades, estaas será el **código en desarrollo**, de modo que estas modificaciones NO MODIFIQUEN el código en producción.  
+   
+    `$ git checkout -b rama-morgado`  
+    Este comando provoca la creación de la rama y la selección/activación de esta  
+    Ejecutamos git branch para verificar ...  
+    ![brach](./img/branh.png)  
 
 **Modificamos el proyecto** y **actualizamos el repositorio remoto** 
    1. Realizamos cambios en el código, pe:
