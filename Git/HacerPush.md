@@ -1,5 +1,9 @@
 **Índice**
 1. [Hacer un push en el repositorio remoto de Clase](#id1)
+2. [Configuraciones iniciales](#id2)
+3. [Modificamos nuestro proyecto y actualizamos el repositorio remoto](#id3)
+4. [Descargar Actualizaciones del master](#id4)
+5. [Descargar otras ramas del repositorio remoto](#id5)
 
 # Hacer un push en el repositorio remoto de Clase<a name="id1"></a>
 La idea es 
@@ -9,7 +13,7 @@ La idea es
 * Realizar el diseño de la práctica/examen. En este proceso usaremos git status, git add, git commit de modo que vayamos añadiendo ficheros al nuevo escenario y realicemos los snapshots con git commit
 * Podemos ver la evolución con git log
 * Finalmente subiremos las modificaciones de los diferentes commits al repositorio de clase con git push
-## Configuraciones iniciales
+## Configuraciones iniciales<a name="id2"></a>
   ### 1. Creamos un repositorio local
    Nos vamos a nuestro direcorio del proyecto y hacemos un  
    `$git init` Esto provoca la creación de un **repositorio local** en nuestra máquina para este directorio.
@@ -55,7 +59,7 @@ La idea es
   > **Nota** es importante el orden de los pasos. Si hacemos (4) antes que (3), debemos de mezclar ambas ramas:  
     `$git merge rama-morgado master`  
     Pero esto lo dejaremos para otro documento ...
-## Modificamos nuestro proyecto y actualizamos el repositorio remoto 
+## Modificamos nuestro proyecto y actualizamos el repositorio remoto<a name="id3"></a> 
    ### 1. Realizamos cambios en el código  
   * Creamos/modificamos/borramos ficheros ...
   * Modificamos los css para hacer el rwd ...
@@ -83,7 +87,7 @@ La idea es
   > Posiblemente te solicite la autorización  de tu usuario git en el navegador. Esto deberás de hacerlo una sola vez. El resto de git push debes de hacerlo sin que te lo vuelva a pedir   
     
   ![ramas](./img/ramas.png)  
-## Descargar Actualizaciones del master 
+## Descargar Actualizaciones del master<a name="id4"></a>
   Descargamos las actualizaciones del **master remoto** al **master local**  
   1. Vemos las ramas con `$ git branch` y con `$ git checkout master` cambiamos a la **rama master** del repositorio local.  
       ![branchMaster](./img/brachmaster.png)  
@@ -100,7 +104,7 @@ La idea es
     Vemos como se produce el MILAGRO, se cambia a rama-morgado en VSCODE, y se ACTUALIZA NUESTRO CÓDIGO EN VSCODE.
   5. Podemos permutar y volver a master para ver las acutualizaciones ...
   6. Podemos cambiar de rama solo si en la rama hemos realziado un commit, hasta que no hagamos el commit no podremos cambiar de rama.
-## Descargar otras ramas del repositorio remoto** 
+## Descargar otras ramas del repositorio remoto<a name="id5"></a> 
  1. En el repositorio local creamos la rama que deseo descargar, pe:el código de un compañero en su rama.  
   `$git checkout -b rama-compañero`  
  2. verificamos el cambio y Descargarmos el código  
