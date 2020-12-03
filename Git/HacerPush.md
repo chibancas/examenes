@@ -109,3 +109,13 @@ La idea es
   `$git checkout -b rama-compañero`  
  2. verificamos el cambio y Descargarmos el código  
   `$git pull origin rama-compañero`
+## Creación de una nuevo repositorio
+```
+  echo "# LMSGI" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M master
+  git remote add origin https://github.com/morgadodesarrollador/LMSGI.git
+  git push -u origin master
+```
