@@ -1,3 +1,7 @@
+**Índice**
+1. [Hacer un push en el repositorio remoto de Clase]
+
+
 # Hacer un push en el repositorio remoto de Clase
 La idea es 
 * Debemos de configurar con git config el user.name, user.email y user.password
