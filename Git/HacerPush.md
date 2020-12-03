@@ -86,8 +86,8 @@ La idea es
       ![branchMaster](./img/brachmaster.png)  
       ![vscodemaster](./img/vscodemaster.png)  
     Podemos comprobar que al cambiar de ramma, se da el DESASTRE, Y ocurren 2 cosas en VSCODE:  
-      * Abajo a la derecha cambia a rama **master**.  
-      * Desaparece de VSCODE el código desarrollado por nosotros en nuestra rama **rama-morgado**  
+      + Abajo a la derecha cambia a rama **master**.  
+      + Desaparece de VSCODE el código desarrollado por nosotros en nuestra rama **rama-morgado**  
   2. Descargamos la rama **master** de origen a la **rama activa** de nuestro repositorio local, que es la master.  
     `$git pull origin master`  
     Esto produce la descarga  de las actualizaciones de la **rama master del repositorio remoto** en la **rama master del repositorio local**  
