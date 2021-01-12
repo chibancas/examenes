@@ -1,0 +1,16 @@
+
+
+#container  {
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 25% 30% 30% 15%;
+    grid-template-areas: 
+        "head head head" 
+        "nav  main lateral"
+        "nav  main lateral"
+        "foot foot lateral";
+}
+
+#container aside {
+    display: block;
+    
+}

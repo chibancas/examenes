@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto;
+}
+#container > header  {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 20% auto 10%;
+    grid-template-rows: repeat(3, auto);
+}
+#container > header #contactos{
+    display: none;
+}
+#container > header #sociales a {
+    color: black;
+    font-size: 30px;
+    border: 2px solid black;
+}
+#container main {
+    background-color: orange;
+}

@@ -1,0 +1,14 @@
+
+#container  {
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "head head head" 
+        "nav  main main"
+        "nav  main main"
+        "foot foot foot";
+}
+
+#container aside {
+    display: none;
+}
