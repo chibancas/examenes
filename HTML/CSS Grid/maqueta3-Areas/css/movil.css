@@ -8,6 +8,8 @@
     display: grid;
     background-color: rgba(0,0,0,.2);
     height: 500px;
+    padding: 5px;
+    grid-gap: 5px;
     grid-template-columns: 100%;
     grid-template-areas: 
         "head" 
@@ -21,7 +23,26 @@
 #container  header { /* grid-column: 1 / 4  y grid-row: 1 / 2 */
     grid-area: head;
     background-color: black;
+    padding: 5px;
     color: white; 
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "logo titulo"
+        "mSec mSec";
+}
+#container header figure{
+    grid-area: logo;
+    background-color: rgba(255,0,0,.5);
+}
+#container header h2{
+    grid-area: titulo;
+    background-color: rgba(0,255,0,.5);
+}
+#container header nav{
+    grid-area: mSec;
+    background-color: rgba(0,0,255,.5);
 }
 #container  nav { /* grid-column: 1 / 2  y grid-row: 2 / 4 */
     grid-area: nav;
