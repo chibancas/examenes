@@ -16,3 +16,10 @@ En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro p
             <nav id="principal">
                 <a id="trabajos">
   
+* Realizamos el código en JQ que garantice que la página se ha cargado completamente
+## 3. Realizar la carga de cada **subpagina.html** en la seccion ```<main>```
+* Crear una función JQ para Detectar la pulsación sobre los enlaces del ```<nav id ="principal">```
+* Extraer el **id** del enlace seleccionado
+* Crear la variable **ruta** que contenga la ruta a la subpagina.html
+* Cargar en la ```<main>``` la subpagina.html usando la función **load()**
+  $("main").load(ruta);
