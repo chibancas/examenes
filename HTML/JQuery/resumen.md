@@ -22,4 +22,6 @@ En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro p
 * Extraer el **id** del enlace seleccionado
 * Crear la variable **ruta** que contenga la ruta a la subpagina.html
 * Cargar en la ```<main>``` la subpagina.html usando la función **load()**
+  
   $("main").load(ruta);
+* Valorar y razonar en las secciones **consola** y **elements** de la **barra de desarrolladores** que está pasando ...
