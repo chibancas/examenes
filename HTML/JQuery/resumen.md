@@ -3,6 +3,9 @@ La idea es realizar un **proyecto SPA** (Aplication Single Page), es decir un pr
 
 La idea es que las páginas **formacion.html, servicios.html, trabajos.html** ... se cargen de forma dinámica, y demanda (cuando se soliciten), en la etiqueta ```<main>``` de nuestro documento. A su vez cargaremos de forma dinámica los **formacion.css, servicios,css, trabajos.css** que formatean cada una de sus **subpaginas** correspondientes. Las subpáginas solo tendrán el contenido html específico .
 
+Partimos del proyecto [CaronteSistemas][1] de la sección **RWD**
+[1]: https://github.com/morgadodesarrollador/LMSGI/tree/master/HTML/RWD/4-CaronteSistemas
+
 Acciones a llevar a cabo:
 
 ## 1. Cargar Bootstrap y JQuery 
@@ -34,7 +37,7 @@ En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro p
 
 Una vez que se carga cualquier subpágina en el ```<main>``` el contenido inicial se pierde y ya no se puede recuperar. La idea es crear una **home.html** que contenga el contenido inicial de la ```<main>``` y hacerlo dinámico pero que se carge al inicio.
 
-## 6. Crear la clase active sobre el enlace seleccionado
+## 6. Crear la clase 'active' sobre el enlace seleccionado
 
 Cada vez que se pulse (click) en el enlace añadiremos dinámicamente la clase **active** al enlace y elimaremos la dicha clase del enlace clickeado anteriormente.
 
