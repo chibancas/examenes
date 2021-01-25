@@ -12,8 +12,7 @@ En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro p
 * Creamos los estilos **formacion.css, trabajos.css, servicios.css**
 * En cada enlace del menú principal ponemos el **id** característico
   
-        ```
-        <header>
+        ```<header>
             <nav id="principal">
                 <a id="trabajos">
         ```
