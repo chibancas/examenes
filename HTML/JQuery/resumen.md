@@ -8,7 +8,7 @@ Acciones a llevar a cabo:
 ## 1. Cargar Bootstrap y JQuery 
 En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro proyecto.
 ## 2. Preparar el entorno
-* Vamos a crear la carpeta html con ** formacion.html, trabajos.html, servicios.html**.
+* Vamos a crear la carpeta html con **formacion.html, trabajos.html, servicios.html**.
 * Cargar **imágenes** en las subpáginas y **valorar la ruta a la imagen**, entendiendo que es **SPA**. 
 * Creamos los estilos **formacion.css, trabajos.css, servicios.css**
 * En cada enlace del menú principal ponemos el **id** característico
