@@ -23,5 +23,7 @@ En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro p
 * Crear la variable **ruta** que contenga la ruta a la subpagina.html
 * Cargar en la ```<main>``` la subpagina.html usando la función **load()**
   
-  $("main").load(ruta);
+  ```$("main").load(ruta);```
 * Valorar y razonar en las secciones **consola** y **elements** de la **barra de desarrolladores** que está pasando ...
+
+## 4. Cargar de forma dinámica los estilos correspondientes a las subpaginas en la sección <head>
