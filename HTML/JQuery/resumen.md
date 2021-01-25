@@ -3,8 +3,8 @@ La idea es realizar un **proyecto SPA** (Aplication Single Page), es decir un pr
 
 La idea es que las páginas **formacion.html, servicios.html, trabajos.html** ... se cargen de forma dinámica, y demanda (cuando se soliciten), en la etiqueta ```<main>``` de nuestro documento. A su vez cargaremos de forma dinámica los **formacion.css, servicios,css, trabajos.css** que formatean cada una de sus **subpaginas** correspondientes. Las subpáginas solo tendrán el contenido html específico .
 
-Partimos del proyecto [CaronteSistemas][1] de la sección **RWD**
-[1]: https://github.com/morgadodesarrollador/LMSGI/tree/master/HTML/RWD/4-CaronteSistemas
+Partimos del proyecto [CaronteSistemas]
+[CaronteSistemas]: https://github.com/morgadodesarrollador/LMSGI/tree/master/HTML/RWD/4-CaronteSistemas
 
 Acciones a llevar a cabo:
 
