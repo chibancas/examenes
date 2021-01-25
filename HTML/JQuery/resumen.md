@@ -11,9 +11,7 @@ En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro p
 * Vamos a crear la carpeta html con ** formacion.html, trabajos.html, servicios.html**.
 * Creamos los estilos **formacion.css, trabajos.css, servicios.css**
 * En cada enlace del menú principal ponemos el **id** característico
-  
         ```<header>
             <nav id="principal">
-                <a id="trabajos">
-        ```
+                <a id="trabajos">```
   
