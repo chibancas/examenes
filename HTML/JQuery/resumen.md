@@ -34,12 +34,16 @@ En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro p
 
 Una vez que se carga cualquier subpágina en el ```<main>``` el contenido inicial se pierde y ya no se puede recuperar. La idea es crear una **home.html** que contenga el contenido inicial de la ```<main>``` y hacerlo dinámico pero que se carge al inicio.
 
-** 6. Crear la clase active sobre el enlace seleccionado
+## 6. Crear la clase active sobre el enlace seleccionado
 
 Cada vez que se pulse (click) en el enlace añadiremos dinámicamente la clase **active** al enlace y elimaremos la dicha clase del enlace clickeado anteriormente.
 
-** 7. Aparecer/desparecer el menú principal en la versión móvil
+## 7. Aparecer/desparecer el menú principal en la versión móvil
 
-Cada vez que pusemos en el **navicon** mostraremos/ocultaremos el menú principal a través del efecto **slideToggle** que hará eñ efecto de persiana.
+Cada vez que pusemos en el **navicon** mostraremos/ocultaremos el menú principal a través del efecto **slideToggle** que hará el efecto de persiana.
 
+## 8. Aplicar el RWD a los estilos de las subpáginas 
 
+Usaremos las MediaQuierys dentro de cada estilo.css, usando las reglas compatibles con las marcadas en la **index.html** y solo afectando al html asociado.
+
+En este apartado usaremos **FlexBox** pero podemos usar **GridLayout**. En caso de usar **Bootstrap** pondremos en las subpáginas.html los breakpoints ppertinentes **xs, md, lg...** 
