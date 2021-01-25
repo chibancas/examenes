@@ -9,6 +9,7 @@ Acciones a llevar a cabo:
 En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro proyecto.
 ## 2. Preparar el entorno
 * Vamos a crear la carpeta html con ** formacion.html, trabajos.html, servicios.html**.
+* Cargar **imágenes** en las subpáginas y **valorar la ruta a la imagen**, entendiendo que es **SPA**. 
 * Creamos los estilos **formacion.css, trabajos.css, servicios.css**
 * En cada enlace del menú principal ponemos el **id** característico
   
@@ -26,4 +27,19 @@ En esta ocasión usaremos los CDN's asociados en vez de descargarlos a nuestro p
   ```$("main").load(ruta);```
 * Valorar y razonar en las secciones **consola** y **elements** de la **barra de desarrolladores** que está pasando ...
 
-## 4. Cargar de forma dinámica los estilos correspondientes a las subpaginas en la sección <head>
+## 4. Cargar de forma dinámica los estilos correspondientes a las subpaginas en la sección ```<head>```
+* **valorar la ruta a LOS ESTILOS**, entendiendo que es **SPA**. 
+
+## 5. Solucionar la sección home
+
+Una vez que se carga cualquier subpágina en el ```<main>``` el contenido inicial se pierde y ya no se puede recuperar. La idea es crear una **home.html** que contenga el contenido inicial de la ```<main>``` y hacerlo dinámico pero que se carge al inicio.
+
+** 6. Crear la clase active sobre el enlace seleccionado
+
+Cada vez que se pulse (click) en el enlace añadiremos dinámicamente la clase **active** al enlace y elimaremos la dicha clase del enlace clickeado anteriormente.
+
+** 7. Aparecer/desparecer el menú principal en la versión móvil
+
+Cada vez que pusemos en el **navicon** mostraremos/ocultaremos el menú principal a través del efecto **slideToggle** que hará eñ efecto de persiana.
+
+
