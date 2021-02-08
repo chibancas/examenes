@@ -17,7 +17,7 @@ $containerAPP = $app->getContainer();
 
 require __DIR__ . "/../Routes/libros.php";
 require __DIR__ . "/../Config/config.php";
-require __DIR__ . "/../Config/bd.php";
+require __DIR__ . "/../Config/DB.php";
 
 
 
