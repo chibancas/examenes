@@ -2,11 +2,11 @@
     namespace App\Controllers;
     use Psr\Http\Message\ResponseInterface as Response;
     use Psr\Http\Message\ServerRequestInterface as Request;
-
+    use App\Model\UsuariosModel;
     class UsuariosController {
     
         public function new(Request  $request, Response $response, $args){
-            $response->getBody()->write("Insertar una nuevo Usuario");
+            $response->getBody()->write("Insercción de Nuevo Usuarios");
             return $response
                 ->withHeader('Content-Type', 'application/json')
                 ->withStatus(200);
