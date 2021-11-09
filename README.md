@@ -1,5 +1,5 @@
 # LMSGI
-Proyectos en LMSGI: HTML y Angular
+Proyectos de LMSGI: HTML, Angular y API RESTcon JSON
 
 ## Título
 
