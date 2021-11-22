@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color:grey;
+    padding: 10px;
+    height: 100px; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.centrado  {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header i {
+    width: 10%;
+    color: red;
+    background-color:yellow;
+    font-size: 40px;
+    padding: 5px;
+}
+header h1 {
+    width: 90%;
+    background-color:green;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+header nav {
+    width: 100%;
+    background-color:red;
+    display: none;
+}
