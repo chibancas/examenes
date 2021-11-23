@@ -1,11 +1,13 @@
 
-body {
-    background-color: blue;
-}
-header i {
+header > i {
     display: none !important;
 }
+header h1 {
+    width: 30%;
+    order: 2;
+}
 header nav {
-    
-    display: block;
+    width: 70%;
+    order: 1;
+    flex-direction: row;;
 }
