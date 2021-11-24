@@ -29,3 +29,38 @@ header nav a i{
 header nav a span{
     order:1;
 }
+
+main nav {
+    width: 10%;
+    flex-flow: column nowrap;
+    justify-content: flex-start
+}
+main section {
+    width: 70%;
+    order:2;
+}
+main section h2{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+main section article {
+    width: 30%
+}
+main aside {
+    order:3;
+    width: 20%;
+}
+footer{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer #mapa {
+    width: 50%;
+    order:2
+}
+footer #sociales {
+    width: 50%;
+    order:1
+}
