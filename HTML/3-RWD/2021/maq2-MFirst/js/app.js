@@ -37,14 +37,28 @@ const cubo1 = ( x ) => {
 const cubo = (x) => x*x*x;
 console.log( cubo(5,) );
 
-const potencia = (b, e) => {
+const potencia = (b, e) => { // 3 * 3 * 3 * 3 * 3   --> 3 + 3 + 3 + 3 + 3
     let res = 1;
     for(i = 1; i <= e; i++){
         res = res * b
     }
     return res;
 }
-console.log (potencia (3,3));
+//console.log (potencia (3,5));
+
+// sumer los 10 primeros numeros 
+const suma10 = ( n ) => {
+    let stotal = 0;
+    for (i = 0; i <= n ; i ++){
+        stotal = stotal + i;
+    }
+    return stotal;
+}
+console.log(suma10( 2 ));
+console.log(suma10( 5 ));
+console.log(suma10( 100 ));
+
+
 
 
 
