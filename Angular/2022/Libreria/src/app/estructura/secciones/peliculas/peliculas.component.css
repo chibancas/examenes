@@ -6,3 +6,15 @@
 tbody img {
   width: 30%;
 }
+
+section {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+section ul {
+  width: 20%
+}
+section div {
+  width: 80%;
+}

@@ -15,3 +15,11 @@ export interface IPeliculas{
   page: number;
   results?: IPelicula[];
 }
+
+export interface IGenero {
+  id: string;
+  name: string;
+}
+export interface IGeneros {
+  genres?: IGenero[]
+}

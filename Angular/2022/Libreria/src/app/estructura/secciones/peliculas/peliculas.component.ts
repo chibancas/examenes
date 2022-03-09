@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IPeliculas } from 'src/app/Interfaces/Peliculas';
+import { IPeliculas, IGenero, IGeneros } from 'src/app/Interfaces/Peliculas';
 import { PeliculasService } from 'src/app/services/peliculas.service';
 
 @Component({
@@ -9,6 +9,8 @@ import { PeliculasService } from 'src/app/services/peliculas.service';
 })
 export class PeliculasComponent implements OnInit {
   pagina: number = 0;
+
+  public generos: IGeneros = {};
   public peliculas: IPeliculas = {
     page: 1,
   };
@@ -17,6 +19,10 @@ export class PeliculasComponent implements OnInit {
   async ngOnInit() {
     this.peliculas = await this.peliculasService.getAll(this.pagina);
     console.log(this.peliculas);
+    this.generos = await this.peliculasService.getGeneros();
+    console.log(this.generos);
+
+
   }
   async  getPagina(npagina: number){
    // this.pagina = npagina;
