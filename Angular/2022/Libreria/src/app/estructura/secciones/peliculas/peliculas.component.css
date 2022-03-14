@@ -8,12 +8,15 @@ tbody img {
 }
 
 section {
+  border: 0px solid red;
+
   display: flex;
   flex-flow: row nowrap;
+  justify-content:space-around;
 }
 
 section ul {
-  width: 20%
+  width: 15%
 }
 section div {
   width: 80%;

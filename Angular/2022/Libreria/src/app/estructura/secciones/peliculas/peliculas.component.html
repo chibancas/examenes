@@ -2,7 +2,7 @@
       <ul class="list-group">
         <li class="list-group-item" aria-current="true"
             *ngFor="let genero of generos.genres">
-            {{ genero.name }}
+            <a (click)="getFilter(genero.id)"> {{ genero.name }}/{{ genero.id }} </a>
         </li>
 
       </ul>
@@ -16,7 +16,15 @@
             <li class="page-item">
               <a class="page-link"  (click)="getPagina(2)">2</a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link"  (click)="getPagina(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link"  (click)="getPagina(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link"  (click)="getPagina(5)">5</a>
+            </li>
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
           </ul>
         </nav>
@@ -30,18 +38,20 @@
               <th>Popularidad</th>
               <th>Clasificacion</th>
               <th>Votos</th>
+              <th>Generos</th>
             </thead>
             <tbody>
               <tr *ngFor="let pelicula of peliculas.results">
                 <td>
                   <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{pelicula.poster_path}}">
                 </td>
-                <td>{{ pelicula.id }}</td>
+                <td><a (click)="getMovie('523931')">{{ pelicula.id }}</a></td>
                 <td>{{ pelicula.original_language }}</td>
                 <td>{{ pelicula.original_title }}</td>
                 <td>{{ pelicula.popularity }}</td>
                 <td>{{ pelicula.adult }}</td>
                 <td> {{ pelicula.vote_average }}</td>
+                <td>{{ pelicula.genre_ids }}</td>
               </tr>
             </tbody>
           </table>

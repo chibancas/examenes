@@ -7,13 +7,14 @@ import { IGenero, IGeneros, IPelicula, IPeliculas } from '../Interfaces/Pelicula
 })
 export class PeliculasService {
   private api = 'https://api.themoviedb.org/3'; //parte fija de la URL a la API
+
   private params =
     new HttpParams()
       .set('api_key', 'ce7492bc632fe837c18e798a5779b9aa')
-      .set('page', 6)
+      .set('page', 1)
       .set('language', 'es-ES');
 
-  private httpOptions = {
+  private  httpOptions = {
     headers: new HttpHeaders({
       'Accept' : 'application/json',
     }),
@@ -25,10 +26,50 @@ export class PeliculasService {
     let fnac = 2022 - edad;
     return fnac;
   }
-//getAll() es una función asyncrona espera xseg y
-// devuelve una promesa cuyo resolv() son los datos que
-//recibe de la API en el subscribe
 
+  async getMovie(id: string): Promise<IPelicula>{
+    const prefix = 'movie';
+    const url = `${this.api}/${prefix}/${id}`;
+    console.log(url);
+    return new Promise ( resolve => {
+      this.http.get<IPelicula>(url, this.httpOptions)
+        .subscribe (data => {
+          console.log(data);
+          resolve(data)
+        })
+    })
+
+  }
+  async getPagina(pagina: number):Promise<IPeliculas>{
+    const prefix = 'discover/movie';
+    const url = `${this.api}/${prefix}`;
+    let params1 = new HttpParams()
+                  .set("page", pagina)
+                  .set('api_key', 'ce7492bc632fe837c18e798a5779b9aa');
+    this.httpOptions.params = params1;
+    return new Promise (resolve => {
+      this.http.get<IPeliculas>(url, this.httpOptions)
+        .subscribe( data => {
+          console.log(data);
+          resolve(data);
+        })
+    })
+  }
+  async getFilter(genero: string):Promise<IPeliculas>{
+    const prefix = 'discover/movie';
+    const url = `${this.api}/${prefix}`;
+    let params1 = new HttpParams()
+                  .set("with_genres", genero)
+                  .set('api_key', 'ce7492bc632fe837c18e798a5779b9aa');
+    this.httpOptions.params = params1;
+    return new Promise (resolve => {
+      this.http.get<IPeliculas>(url, this.httpOptions)
+        .subscribe( data => {
+          console.log(data);
+          resolve(data);
+        })
+    })
+  }
   async getGeneros(): Promise<IGeneros> {
     const prefix = '/genre/movie/list';
     const url = `${this.api}/${prefix}`;
