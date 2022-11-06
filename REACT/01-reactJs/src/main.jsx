@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 edad = { 50 }  
         />
         <CouterApp 
-                valor= { 8 } 
+                valor= { 100 } 
         />
     </React.StrictMode>
 )
