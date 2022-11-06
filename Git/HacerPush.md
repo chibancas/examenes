@@ -4,7 +4,7 @@
 3. [Modificamos nuestro proyecto y actualizamos el repositorio remoto](#id3)
 4. [Descargar Actualizaciones del master](#id4)
 5. [Descargar otras ramas del repositorio remoto](#id5)
-6. [Creación de una nuevo repositorio](#id6)
+
 # Hacer un push en el repositorio remoto de Clase<a name="id1"></a>
 La idea es 
 * Debemos de configurar con git config el user.name, user.email y user.password
@@ -109,7 +109,7 @@ La idea es
   `$git checkout -b rama-compañero`  
  2. verificamos el cambio y Descargarmos el código  
   `$git pull origin rama-compañero`
-## Creación de una nuevo repositorio<a name="id6"></a> 
+## Creación de una nuevo repositorio
 ```
   echo "# LMSGI" >> README.md
   git init
