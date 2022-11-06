@@ -2,18 +2,20 @@ import { useState } from "react"
 
 const GitExpertApp = () => {
     
-    //categorias = ['One Punch']
+    //categorias = ['One Punch', 'Dragon Ball']
     const [ categorias, setCategorias ] = useState ( ['One Punch', 'Dragon Ball'] );
-    console.log (categorias);
+    const onAddCategory = () => {
+        setCategorias ( [...categorias, 'Valorant']);
+        // setCategorias(cat => [ ...cat, 'Valorant'])
+    }
     return (
         <>
             {/* titulo */}
             <h1>GitExpertApp</h1>
-
-
             {/* buscador de giphy */}
 
             {/* listado de tarjetas con cada giphy */}
+            <button onClick={ onAddCategory }>Agregar</button>
             <ol>
                 { 
                     categorias.map ( (categoria) => {
