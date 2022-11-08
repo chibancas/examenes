@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header {
+body > header {
     background-image: url(../img/header.jpg);
     height: 683px ;
     display: flex;
@@ -103,9 +103,7 @@ main {
     padding-top: 20px;
 
 }
-main h2 {
-    padding-left: 40px;
-}
+
 main section {
     display: flex;
     flex-flow: row wrap;
@@ -113,6 +111,13 @@ main section {
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
+}
+main section header {
+    width: 100%;
+}
+main section header h2 {
+    padding-left: 40px;
+    text-align: left;
 }
 
 main section article {
