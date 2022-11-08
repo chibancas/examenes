@@ -99,15 +99,49 @@ header button {
     padding: 0 20px;
     border-radius: 20px;
 }
+main {
+    padding-top: 20px;
 
+}
+main h2 {
+    padding-left: 40px;
+}
 main section {
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 main section article {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 21%;
 
 }
 
+main section article figure {
+    height: 100%;
+    width: 50%;
+    border: 0px solid black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
 main section article figure img {
     height: 130px;
+}
+main section article h4 {
+    width: 50%;
+    height: 20%;
+    font-size: 20px;
+    border: 0px solid black;
+}
+main section article p {
+    height: 20%;
+    font-size: 18px;
+    font-style: italic;
 }
