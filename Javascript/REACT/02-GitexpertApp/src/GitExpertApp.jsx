@@ -4,15 +4,17 @@ import { AddCategory } from "./components/AddCategory";
 const GitExpertApp = () => {
     
     const [ categorias, setCategorias ] = useState ( ['One Punch', 'Dragon Ball'] );
-    const onAddCategory = () => {
-        setCategorias ( [...categorias, 'Valorant']);
+  
+    const onAddCategory = ( newCategoria ) => {
+        setCategorias ( [...categorias, newCategoria]);
     }
     return (
         <>
             <h1>GitExpertApp</h1>
             
-            <AddCategory setCategorias = { setCategorias } />
-            {/* listado de tarjetas con cada giphy */}
+            <AddCategory 
+                onNewCategoria = { (valor) => onAddCategory(valor) }
+            />
             <ol>
                 { 
                     categorias.map ( (categoria) => {

@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const AddCategory = ({ setCategorias }) => { //props = setCategorias
+export const AddCategory = ({ onNewCategoria }) => { 
     
     const [inputvalue, setInputValue] = useState('One Punch')
 
@@ -11,7 +11,8 @@ export const AddCategory = ({ setCategorias }) => { //props = setCategorias
         event.preventDefault();
 
         if (inputvalue.trim().length <= 1) return  //1
-        setCategorias( categorias => [inputvalue, ...categorias ]) //2
+        //se emite onNewCategory el valor que argumenta
+        onNewCategoria( inputvalue.trim())
         setInputValue('')
     }
     return (  
