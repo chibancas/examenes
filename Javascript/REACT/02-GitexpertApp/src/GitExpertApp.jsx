@@ -9,9 +9,8 @@ const GitExpertApp = () => {
     }
     return (
         <>
-            {/* titulo */}
             <h1>GitExpertApp</h1>
-            {/* buscador de giphy */}
+            
             <AddCategory setCategorias = { setCategorias } />
             {/* listado de tarjetas con cada giphy */}
             <ol>
