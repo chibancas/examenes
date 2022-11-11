@@ -1,12 +1,13 @@
 import { useState } from "react"
 import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
 
 const GitExpertApp = () => {
     
-    const [ categorias, setCategorias ] = useState ( ['One Punch', 'Dragon Ball'] );
+    const [ categorias, setCategorias ] = useState ( ['One Punch'] );
   
     const onAddCategory = ( newCategoria ) => {
-        
+
         if (categorias.includes(newCategoria)) return
         setCategorias ( [...categorias, newCategoria]);
     }
@@ -17,14 +18,14 @@ const GitExpertApp = () => {
             <AddCategory 
                 onNewCategoria = { (valor) => onAddCategory(valor) }
             />
-            <ol>
-                { 
-                    categorias.map ( (categoria) => {
-                        return <li key={categoria}> { categoria } </li>
-                    })
-                }
-            </ol>
-                {/* Giph Item */}
+            { 
+                categorias.map ( (categoria) => (
+                    <GifGrid 
+                        key={ categoria } 
+                        categoria = { categoria }
+                    />
+                ))
+            }
         </>
     )
 }
