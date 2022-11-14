@@ -7,7 +7,7 @@ const GitExpertApp = () => {
     const [ categorias, setCategorias ] = useState ( ['One Punch'] );
   
     const onAddCategory = ( newCategoria ) => {
-
+        
         if (categorias.includes(newCategoria)) return
         setCategorias ( [...categorias, newCategoria]);
     }
