@@ -1,9 +1,11 @@
+import { useState } from 'react';
+import { Counter } from './bases/Counter';
 
 function App() {
+
   return (
     <>
-      <h1>React + TypeScript</h1>
-      <hr />
+      <Counter initialValue = { 100 } />
     </>
   );
 }
