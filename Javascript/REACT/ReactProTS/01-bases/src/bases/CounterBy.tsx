@@ -3,18 +3,23 @@ import { useState } from "react"
 interface Props {
     initialValue?: number
 }
+
+interface CounterState {
+  counter: number;
+  nClicks: number
+}
 export const CounterBy = ( { initialValue = 50 }: Props  ) => {
     
-  const [ counterState, setCounterState ] = useState({
+  const [ counterState, setCounterState ] = useState<CounterState>({
     counter: initialValue,
     nClicks: 0
   });
 
 
   const handleClick = ( value: number ) => {
-    setCounterState( prev => ({
-      counter: prev.counter + value,
-      nClicks: prev.nClicks + 1
+    setCounterState( ({ counter, nClicks}) => ({
+      counter: counter + value,
+      nClicks: nClicks + 1
     }))
   }
 
