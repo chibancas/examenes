@@ -9,7 +9,7 @@ const GitExpertApp = () => {
     const onAddCategory = ( newCategoria ) => {
         
         if (categorias.includes(newCategoria)) return
-        setCategorias ( [...categorias, newCategoria]);
+        setCategorias ( [newCategoria, ...categorias]);
     }
     return (
         <>

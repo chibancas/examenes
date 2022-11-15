@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { getGifs } from "../helpers/getGifs"
+import { GifGridItem } from "./GifGridItem";
 
 
 export const GifGrid = ({ categoria }) => {
@@ -9,7 +10,6 @@ export const GifGrid = ({ categoria }) => {
 
   const getImages = async () => {
     const newImages = await getGifs(categoria);
-    // console.log(newImages);
     setImages(newImages)
   }
 
@@ -23,17 +23,23 @@ export const GifGrid = ({ categoria }) => {
   //   }, [ ]
   // )
 
-
-
   return (
     <>
         <h2> { categoria } </h2>
-        <ol>
-          { images.map( ( {id, title} ) => (
-            <li key={id}> {title}</li>
+        <div className="card-grid">
+          { 
+            images.map( ( image ) => (
+              <GifGridItem 
+                key= { image.id }
+                //operador spread: espacimos todas las propiedades
+                { ...image } 
+                //no son necesarias
+                // title = { image.title }
+                // url = { image.url }
+              />
             ))
           }
-        </ol>
+        </div>
     </>
   )
 }
