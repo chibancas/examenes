@@ -16,6 +16,8 @@ export const CounterEffect = ()   => {
   useLayoutEffect( () => {
     if (counter < 10) return;
     console.log('%c se llego al valor maximo','color: red; background-color: black' )
+    console.log('%c se llego al valor maximo','color: red; background-color: black' )
+
 
     const tl = gsap.timeline();
     tl.to(counterElement.current, {y: -10, duration: .2, ease: 'ease-out'})
