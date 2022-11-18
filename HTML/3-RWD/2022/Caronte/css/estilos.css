@@ -30,10 +30,30 @@ body {
         width: 100%;
         padding: 10px;
         background-color: ghostwhite;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
     }
     header nav#sociales a {
         font-size: 20px;
         padding-right: 10px;
+        border: 2px solid black;
+        border-radius: 5px ;
+        padding: 10px;
+        margin-right: 10px;
+        width: 50px;
+        text-align: center;
+
+    }
+    header nav#sociales a:hover {
+        transition: all 1s;
+        background-color: grey;
+        color: blue;
+        /* font-size: 25px ; */
+        transform: scale(1.5);
+        /* transform: translate(150px, 150px); */
+        transform: rotate(2500deg);
+        
     }
     header #contacto {
         display: none;
@@ -50,6 +70,8 @@ body {
         width: 60%;
         font-size: 40px;
         color: whitesmoke;
+        border: 2px solid red;
+        border-radius: 20px;
     }
     header button{
         height: 50px;
@@ -64,6 +86,9 @@ body {
         display: flex;
         flex-flow: column nowrap;
         width: 95%;
+    }
+    header nav#ppal a:nth-child(1){
+        display: none;
     }
     header #ppal a {
         padding: 5px;
@@ -88,7 +113,63 @@ body {
 @media screen and (min-width: 650px) {
 
     header {
-        background-color: blue;
+        background-color: none;
+    }
+
+    header #contacto {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        background-color: ghostwhite;
+        order:1;
+    }
+    header #contacto a {
+        font-size: 20px;
+        display: flex;
+        margin-right: 5px;
+    }
+    header #contacto a i {
+        order:1;
+        padding: 3px;
+    }
+    header #contacto a span {
+        order:2;
+        padding: 3px;
+    }
+    header #sociales {
+        width: 100%;
+        order:2;
+    }
+    header figure {
+        order:3;
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header #sociales a {
+        border-radius: 0px !important; 
+        border: 0px solid black !important;
+    }
+    header h1 {
+        border: 0px solid black;
+        border-radius: 0px;
+        order: 4;
+        width: 60%;
+    }
+    header button{
+        display: none;
+    }
+    header #ppal{
+        order:5;
+        flex-direction: row;
+    }
+    header nav#ppal a:nth-child(1){
+        display: block;
+    }
+    header #ppal i{
+        display: block;
+        color: green
     }
 }
 
